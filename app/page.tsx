@@ -7,7 +7,7 @@ export default function Home() {
       <div className="relative flex flex-col items-center gap-12 md:gap-16 max-w-2xl w-full py-12">
         <div className="flex flex-col items-center gap-6 text-center z-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-white/5 bg-white/[0.03] text-[13px] font-medium text-blue-400">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-blue-500/10 bg-blue-500/5 text-[13px] font-medium text-blue-400">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -16,9 +16,8 @@ export default function Home() {
           </div>
 
 
-          {/* Main Title - Adjusted for better fit */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent py-2">
-            MARTINGLE<span className="text-xl sm:text-2xl md:text-3xl align-top ml-1">®</span>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent py-4 px-2">
+            MARTINGLE
           </h1>
 
           {/* Description - Constrained width */}
