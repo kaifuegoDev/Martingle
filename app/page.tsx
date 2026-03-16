@@ -14,15 +14,16 @@ export default function Home() {
             </span>
             Coming Soon
           </div>
-          
+
+
           {/* Main Title - Adjusted for better fit */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent py-2">
             MARTINGLE<span className="text-xl sm:text-2xl md:text-3xl align-top ml-1">®</span>
           </h1>
-          
+
           {/* Description - Constrained width */}
           <p className="max-w-[480px] text-zinc-400 text-base sm:text-lg md:text-xl font-light leading-relaxed px-2">
-            We're building the future of automated trading strategies. 
+            We're building the future of automated trading strategies.
             Experience a new level of precision and control.
           </p>
         </div>
