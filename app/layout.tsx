@@ -13,8 +13,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Martingle",
-  description: "Advanced Martingle Strategy Platform",
+  title: "Martingle - Advanced Martingle Strategy Platform",
+  description: "Martingle is an advanced platform for automated trading strategies, providing precision, control, and cutting-edge tools for traders.",
+  keywords: ["Martingle", "Martingle Esports", "Tournament Platform", "Free Fire Tournament App", "Esports Tournament App",],
+  authors: [{ name: "Martingle Team" }],
+  creator: "Martingle",
+  publisher: "Martingle",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://martingle.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Martingle - Advanced Martingle Strategy Platform",
+    description: "Experience the future of automated trading strategies with precision and control.",
+    url: "https://martingle.vercel.app",
+    siteName: "Martingle",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Martingle - Advanced Martingle Strategy Platform",
+    description: "Experience the future of automated trading strategies with precision and control.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +68,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Martingle",
+              "url": "https://martingle.vercel.app",
+              "description": "Advanced Martingle Strategy Platform for automated trading.",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "All",
+            }),
+          }}
+        />
         {children}
       </body>
     </html>
