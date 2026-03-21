@@ -13,9 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Martingle - Advanced Martingle Strategy Platform",
-  description: "Martingle is an advanced platform for automated trading strategies, providing precision, control, and cutting-edge tools for traders.",
-  keywords: ["Martingle", "Martingle Esports", "Tournament Platform", "Free Fire Tournament App", "Esports Tournament App",],
+  title: "Martingle",
+  description: "Martingle is the ultimate eSports tournament platform, providing elite competition, precise tracking, and rewarding experiences for gamers.",
+  applicationName: "Martingle",
+  keywords: ["Martingle", "Martingle Esports", "Tournament Platform", "Free Fire Tournament App", "Esports Tournament App", "Gaming Community"],
   authors: [{ name: "Martingle Team" }],
   creator: "Martingle",
   publisher: "Martingle",
@@ -29,17 +30,27 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Martingle - Advanced Martingle Strategy Platform",
-    description: "Experience the future of automated trading strategies with precision and control.",
+    title: "Martingle",
+    description: "Battle in elite eSports tournaments and win big on Martingle.",
     url: "https://martingle.vercel.app",
     siteName: "Martingle",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: "Martingle Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Martingle - Advanced Martingle Strategy Platform",
-    description: "Experience the future of automated trading strategies with precision and control.",
+    title: "Martingle",
+    description: "Battle in elite eSports tournaments and win big on Martingle.",
+    images: ["/icon.png"],
+    creator: "@Martingle",
   },
   robots: {
     index: true,
@@ -53,11 +64,20 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: [
+      { url: "/icon.png" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon.png" },
+    ],
   },
   verification: {
     google: "google7cb34a1368345c32",
+  },
+  appleWebApp: {
+    title: "Martingle",
+    statusBarStyle: "black-translucent",
   },
 };
 
@@ -79,8 +99,8 @@ export default function RootLayout({
               "@type": "WebApplication",
               "name": "Martingle",
               "url": "https://martingle.vercel.app",
-              "description": "Advanced Martingle Strategy Platform for automated trading.",
-              "applicationCategory": "FinanceApplication",
+              "description": "Martingle - Battle in elite eSports tournaments and win big.",
+              "applicationCategory": "GamingApplication",
               "operatingSystem": "All",
             }),
           }}

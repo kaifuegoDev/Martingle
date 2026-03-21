@@ -20,9 +20,8 @@ const Navbar = ({ active }: { active?: string }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-semibold tracking-wide transition-all hover:text-blue-400 hover:translate-y-[-1px] ${
-                  active === link.name.toLowerCase() ? 'text-blue-400' : 'text-zinc-400'
-                }`}
+                className={`text-sm font-semibold tracking-wide transition-all hover:text-blue-400 hover:translate-y-[-1px] ${active === link.name.toLowerCase() ? 'text-blue-400' : 'text-zinc-400'
+                  }`}
               >
                 {link.name}
               </a>

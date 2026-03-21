@@ -21,26 +21,13 @@ export default function Home() {
               MARTINGLE
             </h1>
 
-            {/* Description - Restored original description */}
+            {/* Description */}
             <p className="max-w-[480px] text-zinc-400 text-base sm:text-lg md:text-xl font-light leading-relaxed px-2">
-              We're building the future of automated trading strategies.
-              Experience a new level of precision and control.
+              Experience the ultimate eSports tournament platform.
+              Compete in elite leagues, track your victories, and earn your glory.
             </p>
 
-            {/* Demo Button Container - NEW: Kept as requested */}
-            <div className="mt-8">
-              <a 
-                href="/tournaments" 
-                className="group relative inline-flex items-center justify-center px-10 py-3.5 rounded-full bg-blue-600 font-bold text-white transition-all hover:bg-blue-500 hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.3)] hover:shadow-[0_0_60px_rgba(37,99,235,0.5)] overflow-hidden"
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  Launch Demo
-                  <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </span>
-              </a>
-            </div>
+            {/* Demo Button - Temporarily Removed */}
           </div>
 
           {/* Footer info - Restored original footer style */}
